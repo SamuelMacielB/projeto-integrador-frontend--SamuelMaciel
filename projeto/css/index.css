@@ -1,11 +1,27 @@
+/* uso rem em vez de px porque rem escala junto com o tamanho de fonte configurado pelo usuário no navegador, melhorando acessibilidade para quem precisa de fontes maiores */
 h1 {
+  font-family: 'Baloo 2', sans-serif;
+    color: white;
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.4),
+        0 0 40px rgba(255, 255, 255, 0.2);
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 h2 {
+  font-family: 'Baloo 2', sans-serif;
+    color: white;
+    text-shadow:
+        0 0 3px rgba(255, 255, 255, 0.6),
+        0 0 8px rgba(255, 255, 255, 0.4);
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: normal;
+}
+h1, h2 {
+    margin: 0;
 }
 main {
     position: relative;
@@ -13,29 +29,50 @@ main {
 .primeiro-link {
     text-align: center;
     display: block;
-    margin-top: 580px;
-    font-size: 20px;
+    margin-top: 350px;
+    font-size: 1.25rem;
 }
+
 .segundo-link {
     text-align: center;
     display: block;
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 1.25rem;
 }
-.primeiro-link, .segundo-link,
-.primeiro-link:visited, .segundo-link:visited {
-    color: rgb(4, 4, 4);
+
+.primeiro-link:link,
+.segundo-link:link {
+    color: #39ff14;
+    text-decoration: underline;
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.7), 0 0 8px rgba(57, 255, 20, 0.4);
+}
+
+.primeiro-link:visited,
+.segundo-link:visited {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+.primeiro-link:hover,
+.segundo-link:hover {
+    color: white;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.primeiro-link:active,
+.segundo-link:active {
+    color: #00ffff;
 }
 p {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 table {
     margin-left: auto;
     margin-right: auto;
 }
 body {
-    background-image: url("https://images6.alphacoders.com/614/thumb-1920-614159.jpg");
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/08/Charlie-Brown-Desktop-Wallpaper-free-download.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,112 +82,77 @@ html, body {
     padding: 0;
     min-height: 100vh;
 }
-.snoopy-dancando {
-    position: absolute;
-    width: 150px;
-    top: 500px;
-}
-
-.snoopy-esquerda {
-    position: absolute;
-    left: 20px;
-}
-
-.snoopy-direita {
-    position: absolute;
-    right: 20px;
-}
 .card {
-  box-sizing: border-box;
-  position: absolute;
-  left: 230px;
-  top: 150px;
-  width: 190px;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    padding: 16px;
+    margin: 0;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
 }
-
-.card2:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
+/* combinador descendente: aplica o estilo só nos links DENTRO de .card, sem afetar outros <a> da página */
+.card a {
+    color: black;
+    text-decoration: none;
 }
-
-.card2:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-.card2 {
-  box-sizing: border-box;
-  position: absolute;
-  left: 650px;
-  top: 150px;
-  width: 190px;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
-}
-
 .card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
+    border: 1px solid black;
+    transform: scale(1.05);
 }
 
 .card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+.card-fatos {
+    left: 230px;
 }
 
-.card3 {
-  box-sizing: border-box;
-  position: absolute;
-  left: 1070px;
-  top: 150px;
-  width: 190px;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
+.card-personagens {
+    left: 650px;
 }
 
-.card3:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
+.card-galeria {
+    left: 1070px;
+}
+.destaque {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+#cabecalho-principal {
+    text-align: center;
+    padding: 20px;
+}
+.link-neon:link {
+    color: #39ff14;
+    text-decoration: underline;
+    text-shadow: 0 0 4px rgba(57, 255, 20, 0.7), 0 0 8px rgba(57, 255, 20, 0.4);
 }
 
-.card3:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+.link-neon:visited {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+.link-neon:hover {
+    color: white;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.link-neon:active {
+    color: #00ffff; 
 }
