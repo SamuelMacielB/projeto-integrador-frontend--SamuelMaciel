@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #b30000;
+    --background-color: #fafafa;
+    --text-color: white;
+    --espacamento-padrao: 20px;
+    --raio-borda: 8px;
+}
+a:link {
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: #7a0000;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+}
