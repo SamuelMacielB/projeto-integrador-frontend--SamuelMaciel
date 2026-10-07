@@ -29,7 +29,7 @@ main {
 .primeiro-link {
     text-align: center;
     display: block;
-    margin-top: 350px;
+    margin-top: 3rem;
     font-size: 1.25rem;
 }
 
@@ -83,10 +83,8 @@ html, body {
     min-height: 100vh;
 }
 .card {
+    position: relative;
     box-sizing: border-box;
-    position: absolute;
-    top: 150px;
-    width: 190px;
     height: 254px;
     background: rgba(217, 217, 217, 0.58);
     padding: 16px;
@@ -97,10 +95,10 @@ html, body {
     border-radius: 17px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: transform 0.5s, border-color 0.5s;
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     user-select: none;
     font-weight: bolder;
     color: black;
@@ -110,6 +108,12 @@ html, body {
     color: black;
     text-decoration: none;
 }
+.card a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+/* hover usa transform: scale em vez de width/height: não dispara reflow do layout e anima de forma mais suave */
 .card:hover {
     border: 1px solid black;
     transform: scale(1.05);
@@ -118,16 +122,12 @@ html, body {
 .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
 }
-.card-fatos {
-    left: 230px;
-}
-
-.card-personagens {
-    left: 650px;
-}
-
-.card-galeria {
-    left: 1070px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 190px);
+    justify-content: center;
+    gap: 2rem 14rem;
+    padding: 2rem;
 }
 .destaque {
     color: var(--primary-color);

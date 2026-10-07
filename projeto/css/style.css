@@ -21,3 +21,7 @@ a:hover {
 a:active {
     color: orange;
 }
+.navbar { display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; background: var(--primary-color); }
+.navbar a { color: white; text-decoration: none; padding: .5rem 1rem; border-radius: var(--raio-borda); }
+.navbar a:hover,
+.navbar a:focus-visible { background: white; color: var(--primary-color); }
