@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #b30000;
-    --background-color: #fafafa;
+    --primary-color: rgba(0,91,150, 1);
+    --background-color: rgba(7, 21, 34, 1);
     --text-color: white;
     --espacamento-padrao: 20px;
     --raio-borda: 8px;
@@ -10,7 +10,7 @@ a:link {
 }
 
 a:visited {
-    color: #7a0000;
+    color: rgba(0, 174, 239, 1);
 }
 
 a:hover {
@@ -19,7 +19,7 @@ a:hover {
 }
 
 a:active {
-    color: orange;
+    color: rgba(0, 174, 239, 1);
 }
 .navbar { display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; background: var(--primary-color); }
 .navbar a { color: white; text-decoration: none; padding: .5rem 1rem; border-radius: var(--raio-borda); }
