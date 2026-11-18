@@ -72,7 +72,7 @@ table {
     margin-right: auto;
 }
 body {
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2025/08/Charlie-Brown-Desktop-Wallpaper-free-download.jpg");
+    background-image: url("../assets/images/index\ wallpaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,3 +156,7 @@ html, body {
 .link-neon:active {
     color: #00ffff; 
 }
+
+
+
+
