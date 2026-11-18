@@ -22,3 +22,28 @@ h2 {
 .episodio-texto {
     flex: 1;
 }
+.resumo-episodios {
+    font-weight: bold;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    background: #eee;
+}
+
+.episodio.elenco-turma,
+.episodio.elenco-dupla,
+.episodio.elenco-solo {
+    padding-left: 12px;
+    border-left: 8px solid #999;
+}
+
+.episodio.elenco-turma { border-left-color: #d62828; }
+.episodio.elenco-dupla { border-left-color: #f4a300; }
+.episodio.elenco-solo  { border-left-color: #2a9d8f; }
