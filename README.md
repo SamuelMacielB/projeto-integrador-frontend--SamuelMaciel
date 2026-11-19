@@ -29,3 +29,45 @@ Pontos de melhoria
 nome:Maria Eduarda Fernandes Paiva
 data:27/08/2026
 horário:20:30
+
+# Snoopy e sua turma: relatório de avaliação 2 
+
+Revisor: Gustavo Araújo de Jesus
+Data: 18/11/26
+Horário: 19:17
+
+​Pontos positivos
+
+-​O código em JavaScript tá bem organizado em
+funções separadas, lembra a forma como a gente
+divide métodos quando programa em java e C.
+-​Bom uso de .map(), .filter() e .reduce() para
+lidar com os dados da galeria, além das
+validações de entrada no quiz. 
+-​Os arquivos de CSS seguem um padrão limpo, usando
+o box-sizing global para evitar problemas de
+layout junto com Flexbox e Grid.
+
+​Pontos de melhoria
+
+-​Daria para ajustar o tratamento de exceções nos
+casos em que o usuário cancela o prompt de
+repente.
+-​Faltou padronizar os comentários explicativos no
+arquivo script.js, mantendo o mesmo nível de
+detalhe que foi colocado no início do script de
+lógica.
+
+​Estrutura do projeto 
+
+​-A organização geral está bem dividida, separando
+os arquivos de estilo, os scripts e as páginas
+HTML em pastas próprias, o que deixa o código
+fácil de achar e manter.
+
+Impressão Geral
+
+-No geral, o projeto está bem estruturado e
+funcional, mostrando um bom conhecimento e
+pratica na integração entre HTML, CSS e lógica em
+Js.
